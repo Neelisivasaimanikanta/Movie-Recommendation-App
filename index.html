@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Search Section -->
+  <div id="search-section">
+    <h1>Movie Recommendation App</h1>
+    <input type="text" id="search-input" placeholder="Search for movies..." />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <!-- Genre Filter Section -->
+  <div id="genre-filter">
+    <select id="genre-select">
+      <option value="">Select Genre</option>
+      <option value="">Action</option>
+      <option value="">Thriller</option>
+      <option value="">Emotion</option>
+      <option value="">Drama</option>
+      <option value="">Love</option>
+      <option value="">Horror</option>
+      <option value="">Sci-Fi</option>
+      <option value="">Devotional</option>
+      <!-- Dynamically populated with genres -->
+    </select>
+    <button id="genre-btn">Filter by Genre</button>
+  </div>
+
+  <!-- Trending Movies Section -->
+  <h2>Trending Movies</h2>
+  <div id="trending-movies" class="movie-container"></div>
+
+  <!-- Movie Cards Section -->
+  <h2>Movie Results</h2>
+  <div id="movie-cards" class="movie-container"></div>
+
+  <!-- Watchlist Section -->
+  <h2>Watchlist</h2>
+  <div id="watchlist" class="movie-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
